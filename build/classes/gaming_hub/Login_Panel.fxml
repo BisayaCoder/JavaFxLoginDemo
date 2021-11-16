@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" onMouseDragged="#drag" onMousePressed="#press" onMouseReleased="#drag_done" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Styles/_style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="gaming_hub.Login_PanelController">
+   <children>
+      <JFXTextField fx:id="username" focusColor="WHITE" labelFloat="true" layoutX="283.0" layoutY="155.0" onAction="#un_press_enter" prefHeight="25.0" prefWidth="143.0" promptText="Username or Email" styleClass="text_fields" unFocusColor="#901111">
+         <font>
+            <Font name="Gisha" size="12.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="password" focusColor="WHITE" labelFloat="true" layoutX="283.0" layoutY="204.0" onAction="#pass_press_enter" prefHeight="25.0" prefWidth="143.0" promptText="Password" styleClass="text_fields" unFocusColor="#901111">
+         <font>
+            <Font name="Gisha" size="12.0" />
+         </font></JFXPasswordField>
+      <Text fill="WHITE" layoutX="34.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alienware and ROG Gaming Hub Login">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btn_login" layoutX="309.0" layoutY="260.0" onAction="#login" text="LOGIN" textFill="#690000">
+         <font>
+            <Font name="GAMECUBEN DualSet" size="14.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#fcfcfc" layoutX="22.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play with" />
+      <Text fill="#fcfcfc" layoutX="22.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play with" />
+      <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="73.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/fb.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="73.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/spraket_g.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text fill="#bfb8b8" layoutX="442.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account yet?" />
+      <Hyperlink fx:id="create_acc" layoutX="449.0" layoutY="367.0" onAction="#register" text="Register Here " textFill="#c3a3a3" />
+      <Text fill="#bfb8b8" layoutX="529.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="for free!" />
+      <ImageView fx:id="min" fitHeight="18.0" fitWidth="24.0" layoutX="552.0" layoutY="11.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/minimize-window-24.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="close" fitHeight="18.0" fitWidth="24.0" layoutX="576.0" layoutY="11.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/close-window-24.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Separator layoutX="7.0" layoutY="28.0" prefHeight="0.0" prefWidth="538.0" styleClass="dshadow" />
+      <Separator layoutX="4.0" layoutY="10.0" orientation="VERTICAL" prefHeight="20.0" />
+      <Text fill="#fcfcfc" layoutX="95.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facebook Account" />
+      <Text fill="#fcfcfc" layoutX="94.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Google Account" />
+      <Label fx:id="prompt_text" layoutX="235.0" layoutY="107.0" prefHeight="17.0" prefWidth="239.0" textFill="WHITE" />
+      <ImageView fitHeight="23.0" fitWidth="18.0" layoutX="13.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/frame_title_logo.png" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="283.0" layoutY="231.0" text="Forget password?" textFill="#f57474">
+         <font>
+            <Font name="System Regular" size="10.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fx:id="header" fitHeight="29.0" fitWidth="538.0" layoutX="7.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="notif_label" layoutX="46.0" layoutY="74.0" prefHeight="23.0" prefWidth="257.0" textFill="WHITE" />
+   </children>
+   <styleClass>
+      <String fx:value="login_style" />
+      <String fx:value="spraket" />
+      <String fx:value="dshadow" />
+   </styleClass>
+</AnchorPane>

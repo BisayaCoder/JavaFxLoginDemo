@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for Hello World example
+ */
+
+grammar hello;
+
+public <greet> = (Good morning | Hello) ( Ariel| James );
+public <greet2> = (Thank you| Have a nice day|bye| i love you );
+public <command> = (Connect to database|open registration panel|close program|open server);
+public <command2> = (System Start| System Close);

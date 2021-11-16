@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gaming_Hub1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Gaming_Hub.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

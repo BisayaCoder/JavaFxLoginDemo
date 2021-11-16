@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 4, 2020, 1:28:40 PM
+    Author     : Administrator
+*/
+.spraket{
+    /*-fx-background-color: rgba(0,0,0,0);*/
+    -fx-background-radius: 10;
+   
+}
+.root{
+    /*-fx-background-image: url(../Backgrounds/13.jpg);*/
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+.backround{
+
+    -fx-background-image: url('../Backgrounds/12.jpg');
+    /*-fx-background-color: transparent;*/
+    /*-fx-background-color: rgba(0,0,0,0.5);*/
+    /*-fx-background-radius: 10;*/
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    /*-fx-opacity: 10;*/
+}
+.image_stroke{
+    -fx-background-image: url('../Backgrounds/stroke.png');
+}
+.text_style{
+    -fx-border-color: #000000;
+}
+.image_view{
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-border-radius: 10;
+    -fx-border-image-width: 150px;
+}
+.text_fields{
+    -fx-text-fill: #ffffff;
+}
+.rem{
+    -fx-background-image: url('../Backgrounds/BG.png');
+    -fx-background-size: auto;
+}
+.login_style{
+    -fx-effect: dropshadow( two-pass-box, #6B0101, 20.0, 0.0, 0.0, 0.0);
+    -fx-background-image: url('../Backgrounds/ROG.jpg');
+    -fx-background-size: cover;
+}
+.table_style{
+    -fx-background-color: transparent;
+}
+.combo_style{
+    -fx-text-fill: #ffffff;
+}
+.dshadow{
+    -fx-border-color: #901111;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-border-insets: 1px;
+    -fx-animated: true;
+}

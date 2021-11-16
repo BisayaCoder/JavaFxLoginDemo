@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 12, 2020, 12:54:32 PM
+    Author     : Administrator
+*/
+
+.jfx-dialog-layout {
+    -fx-border-color: #6B0101;
+    -fx-background-color: black;
+    -fx-effect: dropshadow( two-pass-box, #6B0101, 20.0, 0.0, 0.0, 0.0);
+    /*-fx-font-size:12.0px;*/
+}
+
+.jfx-dialog-layout .jfx-layout-heading .text{
+    -fx-font-size: 12pt; 
+    -fx-fill: red;
+    -fx-effect: dropshadow( two-pass-box, #6B0101, 20.0, 0.0, 0.0, 0.0);
+    /*-fx-font-weight:bold;*/ 
+}
+/*.custom-alert:header *.header-panel{
+    -fx-background-color: -fx-blue;
+}*/
+.jfx-dialog-layout .jfx-layout-body .text {
+    -fx-font-size: 10pt; 
+    font-family: fantasy;
+    -fx-fill: white;
+    -fx-effect: dropshadow( two-pass-box, #ffff99, 10.0, 0.0, 0.0, 0.0);
+    /*-font-family: fantasy;*/
+}
+
+/**Costumization of Buttons**/
+.jfx-dialog-layout .button{
+    -fx-background-color:white;
+    -fx-text-fill:black;
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow( three-pass-box, #6B0101z, 10.0, 0.0, 0.0, 0.0);
+    -fx-cursor:hand;
+}
+
+.jfx-dialog-layout .button:hover{     
+       -fx-background-color:white;
+        -fx-text-fill:black;
+        -fx-font-weight:bold; 
+}
+.jfx-dialog-layout .hyperlink{
+    -fx-text-fill:#6B0101;
+}
